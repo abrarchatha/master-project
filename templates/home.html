@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Score Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='psl-icon.png') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class='heading_first'>Score Predictor for </span><span class="heading_second">Pakistan Super League (PSL)</span></h2>
+            <div class='description'>
+    			<p>Web App for Prediciting Score</p>
+    		</div>
+    	</div>
+
+        <!-- User Inputs-->
+        <div class="inputs">
+
+            <!-- Slider 1-->
+            <div class='slider-left'>
+
+                <div class="frame">
+                    <div class="pics-up">
+
+                        <!-- Pic1 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='isl.png') }}" alt="Islamabad United">
+                        </div>
+                        <!-- Pic2 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='quetta.jpg') }}" alt="Quetta Gladaitors">
+                        </div>
+                        <!-- Pic3 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='lhr.png') }}" alt="Lahore Qalandars">
+                        </div>
+                        <!-- Pic4 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='khe.png') }}" alt="Karachi Kings">
+                        </div>
+                        <!-- Pic5 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='Peshawar_Zalmi_logo.png') }}" alt="Peshawar Zalmi">
+                        </div>
+                        <!-- Pic6 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='mlt.png') }}" alt="Multan Sultans">
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
