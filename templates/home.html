@@ -58,3 +58,111 @@
                 </div>
 
             </div>
+
+                      <!-- Input Form -->
+            <div class='div2'>
+                <form action="{{ url_for('predict') }}" method="POST" id="formValidation">
+                    <!-- Team 1 Dropdown -->
+                    <select class="form-input align-center" name="team1" required>
+                        <option value="">--- Select team 1 ---</option>
+                        <option value="Islamabad United">Islamabad United</option>
+                        <option value="Karachi Kings">Karachi Kings</option>
+                        <option value="Lahore Qalandars">Lahore Qalandars</option>
+                        <option value="Multan Sultans">Multan Sultans</option>
+                        <option value="Peshawar Zalmi">Peshawar Zalmi</option>
+                        <option value="Quetta Gladiators">Quetta Gladiators</option>
+                    </select><br>
+                    <!-- Team 2 Dropdown -->
+                    <select class="form-input align-center" name="team2" required>
+                        <option value="">--- Select team 2 ---</option>
+                        <option value="Islamabad United">Islamabad United</option>
+                        <option value="Karachi Kings">Karachi Kings</option>
+                        <option value="Lahore Qalandars">Lahore Qalandars</option>
+                        <option value="Multan Sultans">Multan Sultans</option>
+                        <option value="Peshawar Zalmi">Peshawar Zalmi</option>
+                        <option value="Quetta Gladiators">Quetta Gladiators</option>
+                    </select><br>
+                    <!-- Inning Drop Down -->
+                    <select class="form-input align-center" name="inning" required>
+                        <option value="">--- Select Inning Number---</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                    </select><br>
+                    <!-- Overs -->
+                    <input class="form-input" type="text" id="oversText" required name="overs" placeholder="Overs eg. 7"><br>
+                    <!-- Balls Drop Down -->
+                    <select class="form-input align-center" name="balls" required>
+                        <option value="">--- Select Balls Bowled in Current Over---</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                    </select><br>
+                    <!-- Wickets Drop Down -->
+                    <select class="form-input align-center" name="wickets" required>
+                        <option value="">--- Select Fallen Wickets of the Innings </option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                    </select><br>
+                    
+                    
+
+            <input type="submit" class="myButton" id="button" value="Predict Score">
+            </form>
+            </div>
+
+            <!-- Slider 2 -->
+            <div class='slider-right'>
+
+                <div class="frame">
+                    <div class="pics-dwn">
+
+                        <!-- Pic1 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='isl.png') }}" alt="Islamabad United">
+                        </div>
+                        <!-- Pic2 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='quetta.jpg') }}" alt="Quetta Gladaitors">
+                        </div>
+                        <!-- Pic3 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='lhr.png') }}" alt="Lahore Qalandars">
+                        </div>
+                        <!-- Pic4 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='khe.png') }}" alt="Karachi Kings">
+                        </div>
+                        <!-- Pic5 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='Peshawar_Zalmi_logo.png') }}" alt="Peshawar Zalmi">
+                        </div>
+                        <!-- Pic6 -->
+                        <div class="pic-cntr">
+                            <img class="imgWdth" src="{{ url_for('static', filename='mlt.png') }}" alt="Multan Sultans">
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <p class='dscr'>Score Predictor</p>
+       </div>
+
+
+    </body>
+</html>
+
